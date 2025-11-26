@@ -1,0 +1,16 @@
+front-end(visual) - a área onde o cliente, onde tem o cardápio..
+back-end - a cozinha, onde tudo é preparado
+banco de dados - a geladeira e o estoque
+
+Como o navegador(browser):
+    1. Lê o HTML para entender o que será exibido
+    2. Lê o CSS para entender como será exibido
+    3. Lê o JavaScript para entender como deve se comportar
+
+HTML é esqueleto
+CSS é a skin (aparencia, roupa e acessorios)
+JS é as ações (movimentos)
+
+
+diferente.. do que vimos no python..
+
