@@ -9,20 +9,170 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            border: 1px solid green;
         }
 
+        /* estilo base */
         body {
             background-color: #f5f5f5; /* #RR GG BB */
             font-family: Arial, Helvetica, Roboto, sans-serif;
             color: #222;
             line-height: 1.5;
+            padding: 16px;
         }
 
         #titulo-principal {
             text-align: center;
             font-size: 28px;
             margin-bottom: 8px;
+            color: #333366;
+        }
+
+        /* cabeçalho geral*/
+        header {
+            background-color: #fff;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* navegação principal */
+        nav ul {
+            list-style: none; /* remove as bolinhas da lista */
+            text-align: center;
+            margin-top: 8px;
+        }
+        
+        nav li {
+            display: inline; /* coloca os itens do menu na mesma linha */
+            margin: 0 8px;
+        }
+
+        nav a {
+            text-decoration: none; /* tira o sublinhado */
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        /* área principal */
+        #conteudo-principal {
+            max-width: 960px; /* limita a largura para não ficar muito esticado */
+            margin: 0 auto 16px auto; /* centraliza e coloca o espaço embaixo */
+        }
+
+        /* seções principais dentro do main */
+        main section {
+            background-color: #fff;
+            padding: 16px;
+            margin-bottom: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+
+        main section h2 {
+            margin-bottom: 8px;
+            color: #222244;
+            font-size: 20px;
+        }
+        
+        main section p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        main section ul {
+            margin-left: 20px;
+            margin-top: 4px;
+        }
+
+        main section ul li {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        /* artigos dentro da seção novidades */
+        section#novidades article {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #ddd;
+        }
+
+        section#novidades article p {
+            margin-bottom: 6px;
+        }
+
+        section#novidades article h3 {
+            margin-bottom: 4px;
+            font-size: 16px;
+            color: #333366;
+        }
+
+        /* botão de favoritar */
+        button {
+            margin-top: 4px;
+            padding: 6px 12px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004999;
+        }
+
+        aside {
+            background-color: #fff;
+            padding: 12px;
+            margin: 0 auto 16px auto;
+            max-width: 300px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        aside h2 {
+            margin-bottom: 8px;
+            color: #222244;
+            font-size: 18px;
+        }
+
+        aside ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        aside li {
+            margin-bottom: 4px;
+        }
+
+        /* rodapé */
+        footer {
+            background-color: #222;
+            color: #f5f5f5;
+            padding: 12px;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer section {
+            margin-bottom: 8px;
+        }
+        
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
