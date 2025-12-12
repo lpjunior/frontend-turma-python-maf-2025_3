@@ -1,0 +1,212 @@
+/* fundo geral da página */
+body {
+    background-color: #f0f0f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    padding: 16px;
+    line-height: 1.5;
+}
+
+/* cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    z-index: 10;
+}
+
+/* título principal */
+#titulo-principal {
+    color: #003366;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* menu em linha */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+/* container principal */
+#conteudo-principal {
+    max-width: 900px;
+    margin: 0 auto 20px auto;   
+}
+
+/* seções principais como cartões */
+#apresentacao,
+#modulos,
+#novidades,
+#contato {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* subtítulos */
+.subtitulo {
+    color: #444488;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* parágrafos gerais */
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* listas dentro das seções */
+section ul {
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+section ul li {
+    margin-bottom: 4px;
+}
+
+/* cartões dos módulos */
+.card-modulo {
+    border: 1px solid #bbbbbb;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.card-modulo h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #333377;
+}   
+
+/* bloco de dicas fixo na lateral direita */
+#dicas {
+    position: fixed;
+    top: 187px;
+    right: 40px;
+    width: 500px;
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 12px;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    z-index: 5;
+}
+
+#dicas h2 {
+    font-size: 18px;
+    color: #333366;
+    margin-bottom: 8px;
+}
+
+#dicas ul {
+    margin-left: 18px;
+}
+
+#dicas li {
+    margin-bottom: 6px;
+}
+
+/* notícias em novidades */
+.noticia {
+    border-top: 1px solid #dddddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.noticia h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #333366;
+}
+
+/* seção de contato */
+#contato p {
+    margin-bottom: 12px;
+}
+
+/* formulário de contato */
+#contato form {
+    background-color: #f7f7f7;
+    padding: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+/* rótulos do formulário */
+#contato label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* campos do formulário */
+#contato input,
+#contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+}
+
+/* área de texto maior */
+#contato textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* botão padrão da página */
+button {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #004f99;
+}
+
+/* rodapé */
+footer {
+    background-color: #222222;
+    color: #eeeeee;
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+}

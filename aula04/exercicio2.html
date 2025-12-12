@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Estudos - Atividade CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo-principal">Portal de Estudos Front-end</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#apresentacao">Início</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="dicas">
+        <h2>Dicas rápidas de estudo</h2>
+        <ul>
+            <li>Pratique um pouco todos os dias.</li>
+            <li>Revise o código que você já escreveu.</li>
+            <li>Experimente mudar cores e tamanhos para testar.</li>
+        </ul>
+    </aside>
+
+    <main id="conteudo-principal">
+
+        <section id="apresentacao">
+            <h2 class="subtitulo">Curso de Desenvolvimento Web para Iniciantes</h2>
+            <p>Bem-vindo ao seu primeiro contato com HTML e CSS.</p>
+            <p>Neste portal você encontra conteúdo básico para começar a criar suas primeiras páginas.</p>
+        </section>
+
+        <section id="modulos">
+            <h2 class="subtitulo">Módulos do Curso</h2>
+
+            <article class="card-modulo">
+                <h3>HTML Básico</h3>
+                <p>Aprenda a estruturar conteúdo com títulos, parágrafos, listas e links.</p>
+                <ul>
+                    <li>Tags principais</li>
+                    <li>Estrutura de documento</li>
+                    <li>Boas práticas iniciais</li>
+                </ul>
+            </article>
+
+            <article class="card-modulo">
+                <h3>Primeiros Passos com CSS</h3>
+                <p>Entenda como aplicar estilos e deixar sua página mais agradável visualmente.</p>
+                <ul>
+                    <li>Seletores básicos</li>
+                    <li>Cores e fontes</li>
+                    <li>Margens e espaçamentos</li>
+                </ul>
+            </article>
+
+            <article class="card-modulo">
+                <h3>Introdução ao Layout</h3>
+                <p>Organize melhor os elementos na tela usando blocos e alinhamentos simples.</p>
+                <ul>
+                    <li>Blocos de conteúdo</li>
+                    <li>Alinhamento de textos</li>
+                    <li>Organização visual</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="novidades">
+            <h2 class="subtitulo">Novidades do Portal</h2>
+
+            <article class="noticia">
+                <h3>Nova seção de exemplos práticos</h3>
+                <p>Agora você encontra mais exemplos de páginas simples para treinar HTML e CSS.</p>
+            </article>
+
+            <article class="noticia">
+                <h3>Desafios semanais</h3>
+                <p>Toda semana um pequeno desafio para você testar o que aprendeu em sala de aula.</p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2 class="subtitulo">Fale com a equipe</h2>
+            <p>Envie uma mensagem com suas dúvidas sobre o curso.</p>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2025 Portal de Estudos Front-end</p>
+        <p>Desenvolvido para prática de HTML e CSS em sala de aula.</p>
+    </footer>
+
+</body>
+</html>
