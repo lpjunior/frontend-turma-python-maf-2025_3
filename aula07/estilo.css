@@ -1,0 +1,81 @@
+/* Base, pensado para telas grandes (desktop) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container { /* contêiner flex */
+    background-color: #eee;
+    max-width: 1000px; /* largura */
+    margin: 0 auto; /* centraliza */
+    padding: 20px;
+
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* quebra de linha */
+    gap: 20px; /* espaçamento entre itens */
+    
+    justify-content: space-between; /* eixo principal: horizontal */
+    align-items: flex-start; /* eixo cruzado: vertical */
+}
+
+.card { /* itens flex */
+    background-color: #fff;
+    flex: 1 1 calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    min-width: 240px;
+}
+
+footer {
+    background-color: #ddd;
+    color: #333;
+    width: 100%;
+    margin: 20px 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Telas médias, exemplos: tablets e notebooks menores */
+@media (max-width: 900px) {
+    .container {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+/* Telas pequenas, exemplos: celulares */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 16px;
+    }
+    .container {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        padding: 16px;
+    }
+}
