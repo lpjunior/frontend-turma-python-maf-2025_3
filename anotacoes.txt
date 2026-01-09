@@ -14,3 +14,42 @@ JS é as ações (movimentos)
 
 diferente.. do que vimos no python..
 
+O que é um framework de CSS?
+um conjunto pronto de estilos, regras e padrões (classes) que você reaproveita para construir interfaces mais rápido e com consistência.
+
+Pontos importantes:
+- velocidade
+- consistência
+- responsividade pronta
+- Menos CSS repetido
+
+Quando não é a melhor escolha
+- você precisa de um design extremamente único e "sob medida".
+- o projeto é muito pequeno e o peso do framework não compensa.
+- o time quer controle total de cada detalhe sem classe utilitárias.
+
+CSS GRID
+é um sistema de layout do CSS criado para organizar elementos em linhas e colunas, formando uma grade.
+
+Quando usar GRID
+- você quer estruturar a página como um todo.
+- precisa alinhar elmentos tanto horizontalmente quanto verticalmente.
+- o layout tem regiões bem definidas, como cabeçalho, menu, conteúdo e rodapé.
+
+Flexbox x GRID
+O Flexbox é ótimo para organizar itens em uma ÚNICA direção. O Grid é ideal para quando há duas dimensões ao mesmo tempo.
+
+
+coluna => largura
+linha => altura
+100% da largura e dividir em X colunas
+
+100% / 3 = 33.33%?
+100% / 12 = 8.33%
+100% / 2 = 50%
+100% / 10 = 10%
+
+
+col-lg-4 significa:
+O elemento ocupa 4 de 12 colunas.
+o calculo é 12 / 4 = 3 colunas por linha.

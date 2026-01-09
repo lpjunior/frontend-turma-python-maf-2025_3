@@ -1,0 +1,134 @@
+/* base e layout com CSS Grid */
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #1d2433;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.page {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+  gap: 16px;
+  padding: 16px;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+
+.header, .sidebar, .content, .footer {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Header com grid interno */
+.header {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 420px);
+  gap: 12px;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.search input {
+  padding: 10px 12px;
+  border: 1px solid #d6dae6;
+  border-radius: 10px;
+}
+
+.search button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #2d6cdf;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Layout de cards com grid responsivo */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e6e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.card h3 { margin: 0; font-size: 1.05rem; }
+.card p { margin: 0; color: #4b5568; }
+
+.btn {
+  display: inline-block;
+  justify-self: start;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #111827;
+  color: #fff;
+}
+
+/* Sidebar e responsividade do layout principal */
+.sidebar h2 { margin-top: 0; }
+.filter { margin-top: 16px; }
+.filter h3 { margin: 0 0 8px; font-size: 1rem; }
+.filter label { display: block; margin: 6px 0; }
+
+.footer { text-align: center; color: #6b7280; }
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .search {
+    grid-template-columns: 1fr;
+  }
+}

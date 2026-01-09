@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitrine de Cursos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Vitrine de Cursos</h1>
+
+      <form class="search" role="search" aria-label="Buscar cursos">
+        <label class="sr-only" for="q">Buscar</label>
+        <input id="q" type="search" placeholder="Pesquisar por nome ou tema" />
+        <button type="submit">Buscar</button>
+      </form>
+    </header>
+
+    <aside class="sidebar" aria-label="Filtros">
+      <h2>Filtros</h2>
+
+      <section class="filter">
+        <h3>Nível</h3>
+        <label><input type="checkbox" /> Iniciante</label>
+        <label><input type="checkbox" /> Intermediário</label>
+        <label><input type="checkbox" /> Avançado</label>
+      </section>
+
+      <section class="filter">
+        <h3>Duração</h3>
+        <label><input type="checkbox" /> Até 2h</label>
+        <label><input type="checkbox" /> 2h a 6h</label>
+        <label><input type="checkbox" /> 6h+</label>
+      </section>
+    </aside>
+
+    <main class="content" aria-label="Lista de cursos">
+      <section class="cards" aria-label="Cursos em destaque">
+        <article class="card">
+          <h3>HTML e Semântica</h3>
+          <p>Aprenda tags, estrutura e acessibilidade na prática.</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </article>
+
+        <article class="card">
+          <h3>CSS Grid do Zero</h3>
+          <p>Crie layouts completos com linhas, colunas e áreas.</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </article>
+
+        <article class="card">
+          <h3>Bootstrap na Prática</h3>
+          <p>Construa páginas responsivas com grid e componentes.</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </article>
+
+        <article class="card">
+          <h3>Formulários e UX</h3>
+          <p>Inputs, validação visual e boas práticas de interface.</p>
+          <a class="btn" href="#">Ver detalhes</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Projeto guiado, Grid → Bootstrap</small>
+    </footer>
+  </div>
+</body>
+</html>
