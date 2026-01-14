@@ -53,3 +53,18 @@ linha => altura
 col-lg-4 significa:
 O elemento ocupa 4 de 12 colunas.
 o calculo é 12 / 4 = 3 colunas por linha.
+
+
+https://www.google.com/search?
+q=nielsen
+&oq=nielsen
+&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDINCAEQLhjHARjRAxiABDINCAIQABiDARixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDINCAcQLhjHARjRAxiABDIHCAgQLhiABDIHCAkQABiABNIBCDE1MThqMGo3qAIAsAIA
+&sourceid=chrome
+&ie=UTF-8
+
+
+? -> coringa de separação de parâmetros entre url e parâmetros de consulta
+& -> coringa de separação entre parâmetros de consulta
+chave=valor -> par chave-valor
+
+query string -> cadeia de consulta, esse método é usado para passar parâmetros em requisições HTTP GET

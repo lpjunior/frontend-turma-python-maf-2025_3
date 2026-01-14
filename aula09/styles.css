@@ -1,0 +1,35 @@
+/* Estilo para os cards com pequena sombra */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Quando o mouse passa sobre o card aumentamos um pouco e mudamos sombra */
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação de entrada gradual */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicar animação aos cards quando eles aparecem */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* Quando não há resultados, o texto fica centralizado */
+#no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 2rem;
+}
